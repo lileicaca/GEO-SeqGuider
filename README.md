@@ -1,3 +1,8 @@
+<div align=center>
+<img src="https://github.com/lileicaca/GEO-SeqGuider/main/assets/Logo.png" width="400px">
+<h1>GEO-SeqGuider: a quantitative prediction tool specifically designed for the Pseudomonas putida gene editing system.</h1>
+</div>
+
 ## 简介
 > - 本仓库实现了GEO-SeqGuider模型的搭建与训练、预测。GEO-SeqGuider 是一款专为基因编辑系统效果预测而设计的高级软件。基因编辑技术在现代生物学研究和应用中扮演着至关重要的角色，但其复杂性也带来了诸多挑战。基因编辑系统涉及复杂的基因、调控元件（如启动子、增强子等）以及引导RNA的相关信息。为了应对这些挑战，GEO-SeqGuider 软件致力于将这些复杂的信息整合在一起，并基于大语言模型训练出一个能够有效预测基因编辑效果的模型。
 > - 主要入口：`run_main.py`。它通过命令行参数获取模型训练相关配置，并依据这些参数从指定位置读取模型结构的默认配置。随后，该脚本调用 transformers 库的 API 完成 GEOSeqGuider 模型的初始化，并根据参数设置从 input 目录加载经过分词处理的基因组数据或基因编辑系统数据进行训练。训练过程中，程序将依据用户指定的参数执行模型学习，并将训练日志、训练好的模型及相关性能统计结果保存至 output 目录。
