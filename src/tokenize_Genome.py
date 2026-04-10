@@ -76,7 +76,7 @@ def splitDNAsequence(in_listNumDNA: list, in_dictNumTable: dict, in_intLength=51
     return newDNASequence
 
 
-def mainNumGenome(genome='data/kt2440.fa', outputDir='input'):
+def numGenome(genome='data/kt2440.fa', outputDir='input'):
     DNASequence = readAllSequence(genome)
     numberDNA = numSequence(list(DNASequence.values()), G_DICT_NUM_DNA_TABLE)
     numberDNA = splitDNAsequence(numberDNA, G_DICT_NUM_DNA_TABLE, G_INT_SEQUENCELENGTH)
@@ -89,24 +89,3 @@ def mainNumGenome(genome='data/kt2440.fa', outputDir='input'):
               'w') as out:
         for seq in numberDNA[-25:]:
             out.write(json.dumps(seq) + '\n')
-
-
-if __name__ == '__main__':
-    t_dateTime = datetime.datetime.now()
-    print("Begin time : %s" % t_dateTime)
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--genome", default='data/kt2440.fa', type=str, required=True,
-        help="The relative or absolute path of the genome file that needs to be tokenized"
-    )
-    parser.add_argument(
-        "--output_dir", default='input', type=str, help="Folder for storing output files."
-    )
-    args = parser.parse_args()
-
-
-    mainNumGenome(args.genome, args.output_dir)
-
-    t_dateTime = datetime.datetime.now()
-    print("End time : %s" % t_dateTime)
