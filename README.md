@@ -34,7 +34,7 @@ git clone https://huggingface.co/lileica/GEO-SeqGuider localModel
 #### step 2
 Predict with local model weights
 ```bash
-    python GEOSeqGuider.py --model=localModel --promoter="XXXX" --sgRNA='XXXX' --PAM='XXXX' --out_dir='XXXX'
+    python GEOSeqGuider.py --model=localModel/foldx --promoter="XXXX" --sgRNA='XXXX' --PAM='XXXX' --out_dir='XXXX'
 ```
 
 
