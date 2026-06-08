@@ -1,19 +1,12 @@
-<div align=center>
-<h1>GEO-SeqGuider: A quantitative predictive large language model specifically designed for the gene editing system of Pseudomonas putida.</h1>
-</div>
-
-![Image browser window](assets/Logo.png)
-
-## Important links:  
-- [Paper:XXXX](https://arxiv.org/abs/XXXXXXX)
-- [Huggingface: model weights](https://huggingface.co/lileica/GEO-SeqGuider)
-- [Dataset: Zenodo]( https://doi.org/XXXX/zenodo.XXX)
-
 ## Introduction
 > - GEO-SeqGuider is a quantitative predictive large language model specifically designed for the gene editing system of Pseudomonas putida.
 GEO-SeqGuider is a model built upon the Llama framework. Through a two-stage learning process involving genomic data and gene editing systems, it ultimately achieves the goal of predicting gene expression levels based on promoter, sgRNA, and PAM sequences associated with the gene editing system.
 > - We describe GEO-SeqGuider in our paper[XXX](https://doi.org/XXXX)
 
+## Important links:  
+- [Paper:XXXX](https://arxiv.org/abs/XXXXXXX)
+- [Huggingface: model weights](https://huggingface.co/lileica/GEO-SeqGuider)
+- [Dataset: The GEO-SeqGuider model is trained in two stages: genome pre training and specific task fine-tuning, based on the dataset ]( https://doi.org/XXXX/zenodo.XXX)
 
 ## Installation with conda
 ```bash
