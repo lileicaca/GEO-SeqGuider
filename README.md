@@ -1,6 +1,5 @@
 ## Introduction
-> - GEO-SeqGuider is a quantitative predictive large language model specifically designed for the gene editing system of Pseudomonas putida.
-GEO-SeqGuider is a model built upon the Llama framework. Through a two-stage learning process involving genomic data and gene editing systems, it ultimately achieves the goal of predicting gene expression levels based on promoter, sgRNA, and PAM sequences associated with the gene editing system.
+> - GEO-SeqGuider is a genomic language model developed to predict CRISPR regulatory activity in Pseudomonas putida. Built on the Llama architecture, the model was trained through a two-stage process that first incorporates large-scale bacterial genomic sequences and then specializes in CRISPR system parameters, including promoter regions, sgRNA sequences, and PAM motifs. GEO-SeqGuider takes these sequence inputs and quantitatively predicts the resulting gene expression levels under CRISPR activation or interference conditions. By learning the complex sequence-activity relationships, the model enables in silico screening of potential regulatory targets, significantly reducing the experimental workload required for CRISPRa/i design. It serves as a key computational component of our multifunctional CRISPR-AI(D) platform. Ultimately, GEO-SeqGuider enhances the precision and predictability of gene regulation, supporting efficient metabolic engineering in P. putida.
 > - We describe GEO-SeqGuider in our paper[XXX](https://doi.org/XXXX)
 
 ## Important links:  
