@@ -242,9 +242,10 @@ def main(args):
     else:
         raise Exception(f"During prediction, the parameter '--model_path' must be provided.")
 
-    singleCrispPrediction(args, model)
     if args.seq_file is not None:
         mutilCrispPrediction(args, model)
+    else:
+        singleCrispPrediction(args, model)
 
 
 if __name__ == "__main__":
