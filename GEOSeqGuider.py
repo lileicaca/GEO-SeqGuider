@@ -251,7 +251,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--output_dir",
+        "--out_dir",
         type=str,
         required=True,
         help="The output directory where the model predictions and checkpoints will be written.",
